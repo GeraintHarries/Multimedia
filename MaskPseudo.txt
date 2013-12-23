@@ -1,0 +1,31 @@
+1. Generate Mask
+2. Fill it with ones
+3. Align it with spectogram
+4. Edit Mask
+5. Any areas highlighted assign to 0
+6. Dot product the two matrixes together
+7. Show new graph
+
+## GENERATE MASK ##
+
+
+
+## ONES ##
+
+X = ones(arrayXSize, arrayYSize)
+
+## ALIGN ##
+
+display on same graph?
+
+## EDIT MASK ##
+
+
+
+## CHANGE HIGHLIGHTED ##
+
+## DOT PRODUCT ##
+
+## SHOW NEW GRAPH ##
+
+

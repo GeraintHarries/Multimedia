@@ -1,0 +1,22 @@
+amp = 1;
+F_s = 11025;
+F_w1 = 220;
+F_w2 = 440;
+F_w3 = 880;
+
+nsec = 2;
+dur = nsec*F_s;
+
+n = 0:dur;
+
+y1 = amp*cos(2*pi*n*F_w1/F_s);
+y2 = amp*cos(2*pi*n*F_w2/F_s);
+y3 = amp*cos(2*pi*n*F_w3/F_s);
+
+figure(13)
+subplot(y1(1:500))
+subplot(y2(1:500))
+subplot(y3(1:500))
+title('A comparison of a sine wave at different frequencies')
+
+soundsc(y, F_s)
